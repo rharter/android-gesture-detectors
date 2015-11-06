@@ -111,15 +111,13 @@ public abstract class BaseGestureDetector {
         mCurrFocusX = sumX / div;
         mCurrFocusY = sumY / div;
 
-        // Pressure
-        mPrevPressure = prev.getPressure(prev.getActionIndex());
-
         if (prev != null) {
             // Delta time
             mTimeDelta = curr.getEventTime() - prev.getEventTime();
 
             // Pressure
             mCurrPressure = curr.getPressure(curr.getActionIndex());
+            mPrevPressure = prev.getPressure(prev.getActionIndex());
         }
     }
 
