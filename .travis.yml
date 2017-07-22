@@ -1,0 +1,21 @@
+language: android
+jdk:
+- oraclejdk8
+android:
+  components:
+  - tools
+  - platform-tools
+  licenses:
+  - '.+'
+script: ./gradlew lintRelease test
+branches:
+  except:
+  - gh-pages
+notifications:
+  email: false
+sudo: false
+cache:
+  directories:
+  - $HOME/.m2
+before_script:
+- chmod +x gradlew

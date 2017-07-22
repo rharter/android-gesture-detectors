@@ -11,6 +11,7 @@ which in turn takes origin from [Almeros](https://github.com/Almeros/android-ges
 This project is available through JitPack
 
 [![](https://jitpack.io/v/ca.allanwang/android-gesture-detectors.svg)](https://jitpack.io/#ca.allanwang/android-gesture-detectors) 
+[![Build Status](https://travis-ci.org/AllanWang/android-gesture-detectors.svg?branch=master)](https://travis-ci.org/AllanWang/android-gesture-detectors)
 
 To apply, add the following to your root build.gradle:
 
