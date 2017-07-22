@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-// TODO Change this back to the main script once the PR is merged.
-apply from: 'https://raw.githubusercontent.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle'
 
 android {
     compileSdkVersion Integer.parseInt(ANDROID_COMPILE_SDK)
@@ -11,6 +9,18 @@ android {
         targetSdkVersion Integer.parseInt(ANDROID_TARGET_SDK)
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
 }
 
