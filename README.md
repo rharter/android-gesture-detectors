@@ -1,6 +1,37 @@
 Android Gesture Detectors Framework
 ===================================
 
+Notice
+------------
+
+This is the third reinstatement of this project.
+It is based on [rharter's build](https://github.com/rharter/android-gesture-detectors),
+which in turn takes origin from [Almeros](https://github.com/Almeros/android-gesture-detectors)
+
+This project is available through JitPack
+
+[![](https://jitpack.io/v/ca.allanwang/android-gesture-detectors.svg)](https://jitpack.io/#ca.allanwang/android-gesture-detectors) 
+
+To apply, add the following to your root build.gradle:
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+And add the following dependency (You can use a specific version, commit, or -SNAPSHOT):
+
+```gradle
+dependencies {
+    compile "ca.allanwang.kau:android-gesture-detectors:${GESTURE_DETECTORS}"
+}
+
+```
+
 Introduction
 ------------
 
