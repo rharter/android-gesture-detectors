@@ -120,6 +120,7 @@ public abstract class BaseGestureDetector {
 
             // Pressure
             mCurrPressure = curr.getPressure(curr.getActionIndex());
+			mPrevPressure = prev.getPressure(prev.getActionIndex());
         }
     }
 
